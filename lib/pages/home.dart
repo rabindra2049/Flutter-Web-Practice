@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/pages/containers/container_first.dart';
+import 'package:flutter_web/pages/containers/container_second.dart';
 import 'package:flutter_web/utils/constants.dart';
 import 'package:flutter_web/widgets/navbar.dart';
 
@@ -14,14 +16,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     w = MediaQuery.sizeOf(context).width;
     h = MediaQuery.sizeOf(context).height;
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              NavBar(),
-            ],
-          ),
+        child: Column(
+          children: [
+            NavBar(),
+            ContainerFirst(),
+            ContainerSecond(),
+          ],
         ),
       ),
     );
