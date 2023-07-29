@@ -4,6 +4,8 @@ import 'package:flutter_web/pages/containers/container_five.dart';
 import 'package:flutter_web/pages/containers/container_four.dart';
 import 'package:flutter_web/pages/containers/container_second.dart';
 import 'package:flutter_web/pages/containers/container_third.dart';
+import 'package:flutter_web/pages/containers/footer_container.dart';
+import 'package:flutter_web/pages/containers/footer_details_container.dart';
 import 'package:flutter_web/utils/constants.dart';
 import 'package:flutter_web/widgets/navbar.dart';
 
@@ -29,6 +31,8 @@ class _HomeState extends State<Home> {
             ContainerThird(),
             ContainerFour(),
             ContainerFive(),
+            FooterDetailsView(),
+            FooterView()
           ],
         ),
       ),
